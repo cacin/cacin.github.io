@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    color: #007bff;
+    font-size: 4.2em;
+    margin: 0;
+}
+hr{
+    width: 70px;
+    border: 1px solid #007bff;
+    border-bottom: 0;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 1.9 em;
+    font-weight: 400;
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    border: 1px solid #007bff;
+    padding: 14px 20px;
+    transition: all .3s;
+    display: inline-block;
+    margin: auto;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #007bff;
+}
+header{
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+header p{
+    font-size: 1.3em;
+    color: #333;
+    margin: 40px 0;
+}
+header p span{
+    color: #007bff;
+}
+section{
+    padding: 120px 0;
+    
+}
+
+.menu{
+    background-color:  #007bff;
+    color: white;
+}
+.menu ul{
+    margin: 0;
+    padding: 10px 0;
+}
+.menu ul .menu-item{
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+.menu ul .menu-item a{
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    transition: all .3s;
+}
+.menu ul .menu-item a:hover{
+    color: #007bff;
+    background-color: white;
+}
+label[for="drop-nav"]{
+    display: none;
+}
+#drop-nav{
+    display: none;
+}
+
+footer, #portfolio{
+    background-color: #f2f1ed;
+
+}
+
+#about img{
+    border-radius: 50%;
+}
+#about p{
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    color: #777777;
+    tab-size: 1.4em;
+}
+
+
+h1,h2,nav{
+    text-transform: uppercase;
+
+}
+
+.portfolio-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-wrapper .portfolio-item{
+    flex-basis: 25%;
+    height: 200px;
+    position: relative;
+}
+
+.portfolio-wrapper .portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio-wrapper .portfolio-item h3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    line-height: 200px;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: #fff;
+    font-weight: 300;
+    font-size: 3em;
+    opacity: 0;
+}
+.portfolio-wrapper .portfolio-item h3:hover{
+    opacity: 1;
+    transition: linear .3s;
+}
+
+
+#contact form{
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#contact input[type="text"],#contact input[type="email"]{
+    flex-basis: 48%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+#contact textarea{
+    flex-basis: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 100%;
+}
+.social-links{
+    margin-top: 75px;
+}
+
+.social-links .social-link{
+    font-size: 2.5em;
+    color: #007bff;
+    transition: all .3s;
+    display: inline-block;
+    margin: 0 20px;
+}
+.social-links .social-link:hover{
+    color: #777;
+}
+footer{
+    padding: 30px;
+    color: #777;
+}
+
+
+
+/* Responsive styles*/
+
+@media (max-width: 1200px){
+
+    .container{
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 768px;
+    }
+    .portfolio-wrapper .portfolio-item{
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 95%;
+    }
+    .portfolio-wrapper .portfolio-item{
+        flex-basis: 100%;
+    }
+    
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size: 3em;
+    }
+    #about img{
+        max-height: 200px;
+        max-width: 200px;
+    }
+    #contact input[type="text"],#contact input[type="email"]{
+        flex-basis: 100%
+    }
+
+    label[for="drop-nav"]{
+        display: block;
+        padding: 14px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        cursor: pointer;
+        text-align: right;
+    }
+    .menu ul{
+        display: none;
+    }
+    #drop-nav:checked+ul{
+        display: block;
+    }
+
+    .menu ul .menu-item{
+        display: block;
+        text-align: right;
+        margin: 0;
+
+    }
+}
