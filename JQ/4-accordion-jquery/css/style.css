@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #e7dfc3;
+}
+.accordion{
+    background-color: #f8f8f6;
+    border: 1px solid gray;
+    border-top: 5px solid darkblue;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 5px 5px 10px 0px #a4bac1;
+}
+
+
+.accordion-item{
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    padding: 15px 15px 15px 40px;
+}
+
+.accordion-title::before{
+    content: "+";
+    font-size: 20px;
+    position: absolute;
+    left: -16px;
+    top: -4px;
+}
+.accordion-title {
+    color: #2b3a40;
+    text-decoration: none;
+    display: inline-block;  
+    position: relative;
+}
+.accordion-paragraf{
+    display: none;
+}
+
+.open .accordion-title::before{
+    content: "-";
+}
