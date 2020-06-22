@@ -2,7 +2,8 @@ $(document).ready(function(){
   
     $('#btn-put').click(function (){
 
-        $.get('https://akademia108.pl/api/ajax/get-post.php')
+        //$.get('https://akademia108.pl/api/ajax/get-post.php') //sposób 1
+        $.getJSON('https://akademia108.pl/api/ajax/get-post.php') //sposób 2
         .done(function(data){
 
             let pId = $('<p></p>').text(`Post ID: ${data.id}`);
@@ -23,7 +24,7 @@ $(document).ready(function(){
         })
 
 
-        console.log(`Działam`);
+        //console.log(`Działam`);
     })
     
 });
