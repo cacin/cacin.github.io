@@ -7,7 +7,7 @@ let btn = document.getElementById('btn-put');
 
  function getDate () {
 
-    fetch('https://akademia108.pl/api/ajx/get-post.php')
+    fetch('https://akademia108.pl/api/ajax/get-post.php')
     .then (res => res.json())
     .then(data => {
 
