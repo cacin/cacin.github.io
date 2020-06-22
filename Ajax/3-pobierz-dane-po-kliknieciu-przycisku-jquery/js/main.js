@@ -7,9 +7,9 @@ $(document).ready(function(){
         .done(function(data){
 
             let pId = $('<p></p>').text(`Post ID: ${data.id}`);
-            let userId = $('<p></p>').text(`Post ID: ${data.userId}`);
-            let tite = $('<p></p>').text(`Post ID: ${data.tite}`);
-            let body = $('<p></p>').text(`Post ID: ${data.body}`);
+            let userId = $('<p></p>').text(`User ID: ${data.userId}`);
+            let tite = $('<p></p>').text(`Title: ${data.tite}`);
+            let body = $('<p></p>').text(`Body: ${data.body}`);
 
             $('body').append(pId);
             $('body').append(userId);
