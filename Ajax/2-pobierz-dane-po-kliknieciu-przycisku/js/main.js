@@ -17,7 +17,7 @@ let btn = document.getElementById('btn-put');
         let pBody = document.createElement('p');
 
         pId.innerText = `Post ID: ${data.id}`;    
-        pUserId.innerText = `User ID: ${data.UserId}`;
+        pUserId.innerText = `User ID: ${data.userId}`;
         pTitle.innerText = `Title: ${data.title}`;
         pBody.innerText = `Body: ${data.body}`;
 
