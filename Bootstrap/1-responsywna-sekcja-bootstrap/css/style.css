@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+.fab{
+    font-size: 3em;
+    border-radius: 50%;
+    background-color: #f0f7f8;
+    padding: 15px;
+}
+hr {
+    width: 300px;
+}
