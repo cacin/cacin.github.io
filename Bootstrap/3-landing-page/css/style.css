@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+
+}
+.card-img{
+    max-height: 300px;
+}
+.team-item
+{
+    max-width: 200px;
+}
+#contact{
+    background-image: url(../img/slider-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
